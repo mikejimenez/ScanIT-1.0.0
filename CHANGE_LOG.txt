@@ -1,0 +1,35 @@
+===== 1.1.0 ===== (10.18.2015)
+
+===== 1.0.5 ===== (09.27.2015)
+
+09.27.2015
+-Added my By: Text
+-Added Full Screen
+-Added an Error if you send with no data received!
+-Changed Number.length() == 18 to less than 11 to throw an -Error
+-Made ListView selection transparent so you can't click
+-Misc Formatting
+
+09.26.2015
+- Changed FilterFedex()
+- Removed FormatString()
+- Changed FormatEmail()
+- Fixed Counter
+- Added Arrays.fill() to clear out Log Array
+- Added Independent filtering based on character length
+
+===== 1.0.0 ===== (06.01.2015)
+
+09.24.2015
+- Notice Last minute stuff
+
+09.23.2015
+- Added FedEx Ground
+- Added FedEx Express
+- Changed Email Formating
+- Changed Scan Result
+- Added Counter
+
+06/01/2015
+
+- new start of this change_log file

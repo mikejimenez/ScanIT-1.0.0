@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.Editable;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,17 +18,15 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.alpha.ZXing.android.IntentIntegrator;
 import com.alpha.ZXing.android.IntentResult;
-
 import java.util.Arrays;
 import java.util.List;
 
 
 public class MainActivity extends Activity {
 
-    // private Strings
+    // Private Strings
     private String[] log = new String[100];
     private String TypeG = "";
     private String TypeE = "";
@@ -48,6 +48,8 @@ public class MainActivity extends Activity {
 
         Button scanBtn = (Button) findViewById(R.id.scan_button);
         Button clrBtn = (Button) findViewById(R.id.clr_button);
+        Button mnlBtn = (Button) findViewById(R.id.manual_button);
+
         CounterTxt = (TextView) findViewById(R.id.textView2);
         CounterTxt.setText("0");
 
@@ -61,6 +63,14 @@ public class MainActivity extends Activity {
                     }
                 }
         );
+        mnlBtn.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
+                        InputManual();
+
+                    }
+                }
+        );
         clrBtn.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -69,8 +79,7 @@ public class MainActivity extends Activity {
                                     "No scan data received!", Toast.LENGTH_SHORT);
 
                             toast.show();
-                        }
-                        else {
+                        } else {
                             emailResults();
                             clrBtnData();
                         }
@@ -87,57 +96,126 @@ public class MainActivity extends Activity {
         CounterTxt.setText("0");
     }
 
+    public void InputManual() {
+
+        LayoutInflater Manual = LayoutInflater.from(this);
+        final View textEntryView = Manual.inflate(R.layout.manual_entry, null);
+
+        final EditText infoTrack = (EditText) textEntryView.findViewById(R.id.InfoTrack);
+        final EditText infoData = (EditText) textEntryView.findViewById(R.id.InfoData);
+
+        final SQLite db = new SQLite(this);
+        final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        alert.setIcon(R.drawable.ic_dialog_alert_holo_light).setTitle("Manual Entry").setView(textEntryView).setPositiveButton("Save",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int whichButton) {
+
+                        // Log.i("AlertDialog","Entered "+infoData.getText().toString());
+                        // Log.i("AlertDialog", "Entered " + infoTrack.getText().toString());
+
+                        Editable value = infoData.getText();
+                        String Result = infoTrack.getText().toString();
+
+                        if (Result.length() == 12 && Result.length() != 21) {
+                            TypeE = "E";
+                        }
+                        if (Result.length() == 21) {
+                            String buffer = "MJ";
+                            final String ManualScanFedExG = buffer + Result.substring(Result.length() - 21, Result.length());
+                            db.addBarcodes(new Barcodes(ManualScanFedExG, value.toString()));
+                            Counter++;
+                            db.close();
+                            CreateListView();
+                            CounterTxt.setText(Integer.valueOf(Counter).toString());
+                        }
+                        else {
+                            db.addBarcodes(new Barcodes(Result, value.toString()));
+                            Counter++;
+                            db.close();
+                            CreateListView();
+                            CounterTxt.setText(Integer.valueOf(Counter).toString());
+                        }
+                    }
+                }).setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int whichButton) {
+                        Toast toast = Toast.makeText(getApplicationContext(),
+                                "No scan data received!", Toast.LENGTH_SHORT);
+                        toast.show();
+                    }
+                });
+        alert.show();
+    }
+
     public void FormatEmail(String Output) {
-        //
         // Display all bar codes
-        //Log.d(TAG, "Reading - Display Results");
-        //
+        // Log.d(TAG, "Reading - Display Results");
+
         SQLite db = new SQLite(this);
         List<Barcodes> Barcodes = db.getBarCodes();
         db.close();
         int i = 0;
         for (Barcodes cn : Barcodes) {
             String bar = cn.getBarcode();
+
+            // Fedex Ground OLD - 22 Characters add MJ to display on screen
+            if (bar.length() == 24) {
+                String Result = FormatStringX(bar);
+                Output = Result;
+                log[i] = "\n" + Output + " / " + cn.getCompany();
+                i++;
+            }
+
+            // UPS Manual - 23 Characters
+            if (bar.length() == 23 && bar.contains("Z")) {
+                String Result = FormatStringManualUPS(bar);
+                Output = Result;
+                log[i] = "\n" + Output + " / " + cn.getCompany();
+                i++;
+            }
+
+            // Fedex Ground Manual - 23 Characters
+            if (bar.length() == 23 && !bar.contains("Z")) {
+                String Result = FormatStringManualX(bar);
+                Output = Result;
+                log[i] = "\n" + Output + " / " + cn.getCompany();
+                i++;
+            }
+
+            // UPS - 18 Characters
             if (bar.length() == 18) {
-                //
-                // UPS - 18 Characters
-                //System.out.println(" Type UPS");
-                //
                 String Result = FormatStringUPS(bar);
                 Output = Result;
                 log[i] = "\n" + Output + " / " + cn.getCompany();
                 i++;
             }
+
+            // Fedex Express Manual - 14 Characters
+            if (bar.length() == 14) {
+
+                String Result = FormatStringManualE(bar);
+                Output = Result;
+                log[i] = "\n" + Output + " / " + cn.getCompany();
+                i++;
+            }
+
             // Fedex Express - 34 Characters
             // Fedex Ground NEW - 34 Characters && TypeE.equals("E")
             if (bar.length() == 12 && TypeE.equals("E")) {
                 TypeG = "";
-                //
-                //System.out.println(" Type E");
-                //
                 String Result = FormatStringE(bar);
                 Output = Result;
                 log[i] = "\n" + Output + " / " + cn.getCompany();
                 i++;
             }
+
             // Fedex Ground OLD - 32 Characters
             if (bar.length() == 12 && TypeG.equals("G")) {
                 TypeE = "";
-                //
-                //System.out.println(" Type G");
-                //
                 String Result = FormatStringG(bar);
-                Output = Result;
-                log[i] = "\n" + Output + " / " + cn.getCompany();
-                i++;
-            }
-            // Fedex Ground OLD - 22 Characters
-            if (bar.length() == 24) {
-                //
-                //System.out.println(" Type X");
-                //System.out.println(bar + " BAR");
-                //
-                String Result = FormatStringX(bar);
                 Output = Result;
                 log[i] = "\n" + Output + " / " + cn.getCompany();
                 i++;
@@ -149,7 +227,7 @@ public class MainActivity extends Activity {
 
     }
 
-    public String FilterFedex(String Number) {
+    public String Filter(String Number) {
 
         if (Number.length() == 34) {
             //
@@ -211,6 +289,16 @@ public class MainActivity extends Activity {
         return ScanFromFedEX;
     }
 
+    public String FormatStringManualE(String Number) {
+        // Manual Entry
+        // 14 Characters
+        // Fedex Express
+        // Format: XXXX XXXX XXXX
+
+        String ScanFromFedEXManual = Number.substring(0, 4) + "" + Number.substring(4, 9) + "" + Number.substring(9, 14);
+        return ScanFromFedEXManual;
+    }
+
     public String FormatStringUPS(String Number) {
         //
         // 18 Characters
@@ -219,6 +307,16 @@ public class MainActivity extends Activity {
         //
         final String ScanFromUPS = Number.substring(0, 2) + " " + Number.substring(2, 5) + " " + Number.substring(5, 8) + " " + Number.substring(8, 10) + " " + Number.substring(10, 14) + " " + Number.substring(14, 18);
         return ScanFromUPS;
+    }
+
+    public String FormatStringManualUPS(String Number) {
+        // Manual Entry
+        // 23 Characters
+        // UPS
+        // Format: XX XXX XXX XX XXXX XXXX
+        //
+        final String ScanFromManualUPS = Number.substring(0, 2) + " " + Number.substring(3, 6) + " " + Number.substring(7, 10) + " " + Number.substring(11, 13) + " " + Number.substring(14, 18) + " " + Number.substring(19, 23);
+        return ScanFromManualUPS;
     }
 
     public String FormatStringX(String Number) {
@@ -231,6 +329,17 @@ public class MainActivity extends Activity {
         //
         String ScanFromFedEXG = Number.substring(0, 9) + " " + Number.substring(9, 16) + " " + Number.substring(16, 24);
         String Replace = ScanFromFedEXG.replace("MJ", "");
+        return Replace;
+    }
+
+    public String FormatStringManualX(String Number) {
+        // 23 Characters
+        // Fedex Ground
+        // Format: XXXXXXX XXXXXXX XXXXXXX
+        // Replace MJ (Placeholder)
+
+        String ScanFromFedEXGManual = Number.substring(0, 9) + " " + Number.substring(9, 16) + " " + Number.substring(16, 23);
+        String Replace = ScanFromFedEXGManual.replace("MJ", "");
         return Replace;
     }
 
@@ -259,8 +368,8 @@ public class MainActivity extends Activity {
     public void CreateListView() {
 
         listView = (ListView) findViewById(R.id.listView);
-        final SQLite db = new SQLite(this);
 
+        final SQLite db = new SQLite(this);
         Cursor cursor = db.getBarcodesRaw();
 
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
@@ -269,6 +378,7 @@ public class MainActivity extends Activity {
                 new String[]{"Barcode", "Company"},
                 new int[]{android.R.id.text1, android.R.id.text2},
                 0);
+
         listView.setDivider(null);
         listView.setSelector(android.R.color.transparent);
         listView.setAdapter(adapter);
@@ -279,43 +389,45 @@ public class MainActivity extends Activity {
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
 
-
         if (resultCode == RESULT_OK) {
             final String scanContent = scanningResult.getContents();
+
+            LayoutInflater Results = LayoutInflater.from(this);
+
+            final View textEntryView = Results.inflate(R.layout.scan_entry, null);
+            final EditText scanData = (EditText) textEntryView.findViewById(R.id.scanData);
+
             final SQLite db = new SQLite(this);
+            final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setIcon(R.drawable.perm_group_user_dictionary).setTitle("Information").setView(textEntryView).setPositiveButton("Save",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog,
+                                            int whichButton) {
 
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-            alertDialog.setIcon(R.drawable.abc_edit_text_material);
-            alertDialog.setMessage("Name/Company");
+                            Editable value = scanData.getText();
+                            String Result = Filter(scanContent);
 
-            final EditText input = new EditText(this);
-            alertDialog.setView(input);
-
-            alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int whichButton) {
-                    Editable value = input.getText();
-                    String Result = FilterFedex(scanContent);
-                    db.addBarcodes(new Barcodes(Result, value.toString()));
-                    Counter++;
-                    db.close();
-                    CreateListView();
-                    CounterTxt.setText(Integer.valueOf(Counter).toString());
-                }
-            });
-            alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int whichButton) {
-                    // Do nothing.
-                }
-            });
-            alertDialog.show();
-
-
-        } else if (resultCode == RESULT_CANCELED) {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "No scan data received!", Toast.LENGTH_SHORT);
-            toast.show();
+                            db.addBarcodes(new Barcodes(Result, value.toString()));
+                            Counter++;
+                            db.close();
+                            CreateListView();
+                            CounterTxt.setText(Integer.valueOf(Counter).toString());
+                        }
+                    }).setNegativeButton("Cancel",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog,
+                                            int whichButton) {
+                            Toast toast = Toast.makeText(getApplicationContext(),
+                                    "No scan data received!", Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+                    });
+            alert.show();
         }
-
+        else if (resultCode == RESULT_CANCELED) {
+                 Toast toast = Toast.makeText(getApplicationContext(),
+                          "No scan data received!", Toast.LENGTH_SHORT);
+                  toast.show();
+              }
     }
-
 }
