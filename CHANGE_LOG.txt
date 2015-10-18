@@ -1,24 +1,24 @@
 ===== 1.1.0 ===== (10.18.2015)
 
 10.18.2015
--Added Manual Button to add entries, added hint's in input boxes for formating
--Added InputManual(), support for FedEX Ground, FedEX Express, UPS
--Changed FormatEmail(), added support for 3 manual entries
--Renamed FilterFedex() to Filter()
--Added FormatStringManualE(), FormatStringManualUPS(), FormatStringManualX()
--Changed onActivityResult() to new Alert Dialog layout
--Formatted Comments
--Added two new activity layouts and icons
+- Added Manual Button to add entries, added hint's in input boxes for formating
+- Added InputManual(), support for FedEX Ground, FedEX Express, UPS
+- Changed FormatEmail(), added support for 3 manual entries
+- Renamed FilterFedex() to Filter()
+- Added FormatStringManualE(), FormatStringManualUPS(), FormatStringManualX()
+- Changed onActivityResult() to new Alert Dialog layout
+- Formatted Comments
+- Added two new activity layouts and icons
 
 ===== 1.0.5 ===== (09.27.2015)
 
 09.27.2015
--Added my By: Text
--Added Full Screen
--Added an Error if you send with no data received!
--Changed Number.length() == 18 to less than 11 to throw an -Error
--Made ListView selection transparent so you can't click
--Misc Formatting
+- Added my By: Text
+- Added Full Screen
+- Added an Error if you send with no data received!
+- Changed Number.length() == 18 to less than 11 to throw an -Error
+- Made ListView selection transparent so you can't click
+- Misc Formatting
 
 09.26.2015
 - Changed FilterFedex()
@@ -40,6 +40,6 @@
 - Changed Scan Result
 - Added Counter
 
-06/01/2015
+06.01.2015
 
 - new start of this change_log file
