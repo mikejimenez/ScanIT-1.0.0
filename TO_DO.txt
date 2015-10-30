@@ -1,0 +1,3 @@
+- Fix adding manual save without no data
+- Fix Activity state
+- 
