@@ -67,6 +67,28 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Scan It" />
   </component>
@@ -75,35 +97,51 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.902439">
-              <caret line="429" column="37" selection-start-line="429" selection-start-column="37" selection-end-line="429" selection-end-column="37" />
+            <state vertical-scroll-proportion="-1.199005">
+              <caret line="233" column="33" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#clrBtnData#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatEmail#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#Filter#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringG#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringE#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringManualE#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringUPS#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringManualUPS#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringX#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#FormatStringManualX#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#emailResults#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#19598#20242#0" expanded="true" />
-                <element signature="e#20241#20242#0" expanded="true" />
-                <element signature="e#20292#20717#0" expanded="true" />
-                <element signature="e#20716#20717#0" expanded="true" />
+                <element signature="method#ScanDataEmpty#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#3566#5301#0" expanded="true" />
+                <element signature="e#5300#5301#0" expanded="true" />
+                <element signature="e#5347#5590#0" expanded="true" />
+                <element signature="e#5589#5590#0" expanded="true" />
+                <element signature="method#FedEXG#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#ManualFedEXG#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#FedEXGO#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#FedEXE#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#ManualFedEXE#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#UPS#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#ManualUPS#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#CreateListView#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#loadPreferences#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#LoadData#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#saveLog#0;class#MainActivity#0" expanded="false" />
+                <element signature="class#ScanButton#0;class#MainActivity#0" expanded="false" />
+                <element signature="class#ManButton#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#17976#17977#0" expanded="true" />
+                <element signature="e#18013#18014#0" expanded="true" />
+                <element signature="class#ClearButton#0;class#MainActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/SQLite.java">
+      <file leaf-file-name="IntentResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alpha/ZXing/android/IntentResult.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntentIntegrator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alpha/ZXing/android/IntentIntegrator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -112,55 +150,11 @@
       <file leaf-file-name="Barcodes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/Barcodes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/widget/TextView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4147" column="0" selection-start-line="4147" selection-start-column="0" selection-end-line="4147" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resources.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/content/res/Resources.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.1724138">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding>
-                <element signature="e#0#112901#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#8292#8293#0" expanded="false" />
-                <element signature="e#8329#8330#0" expanded="false" />
-                <element signature="e#8823#8824#0" expanded="false" />
-                <element signature="e#8858#8859#0" expanded="false" />
-                <element signature="e#69945#69946#0" expanded="false" />
-                <element signature="e#69990#69991#0" expanded="false" />
-                <element signature="e#71781#71782#0" expanded="false" />
-                <element signature="e#71818#71819#0" expanded="false" />
-                <element signature="e#71868#71869#0" expanded="false" />
-                <element signature="e#71910#71911#0" expanded="false" />
-                <element signature="e#71949#71950#0" expanded="false" />
-                <element signature="e#71984#71985#0" expanded="false" />
-                <element signature="e#73412#73413#0" expanded="false" />
-                <element signature="e#73446#73447#0" expanded="false" />
-                <element signature="e#84214#84215#0" expanded="false" />
-                <element signature="e#84251#84252#0" expanded="false" />
-                <element signature="e#84511#84512#0" expanded="false" />
-                <element signature="e#84552#84553#0" expanded="false" />
-                <element signature="e#86394#86395#0" expanded="false" />
-                <element signature="e#86436#86437#0" expanded="false" />
-                <element signature="e#93640#93641#0" expanded="false" />
-                <element signature="e#93670#93671#0" expanded="false" />
-                <element signature="e#95364#95365#0" expanded="false" />
-                <element signature="e#95409#95410#0" expanded="false" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,44 +165,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31377#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#4519#4520#0" expanded="false" />
-                <element signature="e#4552#4553#0" expanded="false" />
-                <element signature="e#5003#5004#0" expanded="false" />
-                <element signature="e#5040#5041#0" expanded="false" />
-                <element signature="e#5218#5219#0" expanded="false" />
-                <element signature="e#5259#5260#0" expanded="false" />
-                <element signature="e#5605#5606#0" expanded="false" />
-                <element signature="e#5650#5651#0" expanded="false" />
-                <element signature="e#6442#6443#0" expanded="false" />
-                <element signature="e#6475#6476#0" expanded="false" />
-                <element signature="e#10258#10259#0" expanded="false" />
-                <element signature="e#10301#10302#0" expanded="false" />
-                <element signature="e#10614#10615#0" expanded="false" />
-                <element signature="e#10663#10664#0" expanded="false" />
-                <element signature="e#12859#12860#0" expanded="false" />
-                <element signature="e#12922#12923#0" expanded="false" />
-                <element signature="e#20193#20194#0" expanded="false" />
-                <element signature="e#20245#20246#0" expanded="false" />
-                <element signature="e#21088#21089#0" expanded="false" />
-                <element signature="e#21137#21138#0" expanded="false" />
-                <element signature="e#21494#21495#0" expanded="false" />
-                <element signature="e#21549#21550#0" expanded="false" />
-                <element signature="e#26650#26651#0" expanded="false" />
-                <element signature="e#26705#26706#0" expanded="false" />
-                <element signature="e#27541#27542#0" expanded="false" />
-                <element signature="e#27600#27601#0" expanded="false" />
-                <element signature="e#28061#28062#0" expanded="false" />
-                <element signature="e#28117#28118#0" expanded="false" />
-                <element signature="e#28298#28299#0" expanded="false" />
-                <element signature="e#28328#28329#0" expanded="false" />
-                <element signature="e#29660#29661#0" expanded="false" />
-                <element signature="e#29698#29699#0" expanded="false" />
-                <element signature="e#30036#30037#0" expanded="false" />
-                <element signature="e#30072#30073#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,57 +175,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10755#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#1911#1919#0" expanded="false" />
-                <element signature="e#2415#2416#0" expanded="false" />
-                <element signature="e#2444#2445#0" expanded="false" />
-                <element signature="e#5688#5689#0" expanded="false" />
-                <element signature="e#5729#5730#0" expanded="false" />
-                <element signature="e#6188#6189#0" expanded="false" />
-                <element signature="e#6222#6223#0" expanded="false" />
-                <element signature="e#6477#6478#0" expanded="false" />
-                <element signature="e#6517#6518#0" expanded="false" />
-                <element signature="e#6792#6793#0" expanded="false" />
-                <element signature="e#6848#6849#0" expanded="false" />
-                <element signature="e#7548#7549#0" expanded="false" />
-                <element signature="e#7582#7583#0" expanded="false" />
-                <element signature="e#8177#8178#0" expanded="false" />
-                <element signature="e#8210#8211#0" expanded="false" />
-                <element signature="e#9466#9467#0" expanded="false" />
-                <element signature="e#9542#9543#0" expanded="false" />
-                <element signature="e#9858#9859#0" expanded="false" />
-                <element signature="e#9905#9906#0" expanded="false" />
-                <element signature="e#10008#10009#0" expanded="false" />
-                <element signature="e#10038#10039#0" expanded="false" />
-                <element signature="e#10093#10094#0" expanded="false" />
-                <element signature="e#10122#10123#0" expanded="false" />
-                <element signature="e#10376#10377#0" expanded="false" />
-                <element signature="e#10416#10417#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -277,8 +183,48 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state vertical-scroll-proportion="-3.148148">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manual_entry.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/manual_entry.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.965517">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#417#435#0" expanded="true" />
+                <element signature="e#686#707#0" expanded="true" />
+                <element signature="e#903#924#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scan_entry.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/scan_entry.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.793103">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1258,8 +1204,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4297755965713" />
-        <entry key="C:\Users\Post\AndroidStudioProjects\ScanIt" value="4297755965713" />
+        <entry key="$PROJECT_DIR$" value="4311422445112" />
+        <entry key="C:\Users\Post\AndroidStudioProjects\ScanIt" value="4311422445112" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1452,18 +1398,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/Barcodes.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/SQLite.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/abc_edit_text_material.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/f.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/text_entry.xml" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/alpha/com/scanit/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/Barcodes.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/SQLite.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/manual_entry.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/scan_entry.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/MainActivity.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -1473,10 +1428,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1058" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1066" />
+    <option name="height" value="1696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1504,7 +1459,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -1533,6 +1487,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1653,263 +1609,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap-xxhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scanit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scan It" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScanIt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1932,6 +1633,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="true" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -2171,42 +1873,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-1058" y="-8" width="1066" height="1696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.48081023" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19870129" sideWeight="0.45725647" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19870129" sideWeight="0.54274356" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13646056" sideWeight="0.5058043" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14285715" sideWeight="0.48409542" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3469185" sideWeight="0.4941957" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922077" sideWeight="0.4424307" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33846155" sideWeight="0.4552239" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.4691849" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32527474" sideWeight="0.48081023" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33846155" sideWeight="0.54477614" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.45948827" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16298701" sideWeight="0.45228627" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13646056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.4424307" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12527473" sideWeight="0.8512793" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2222,14 +1924,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/MainActivity.java</url>
-          <line>366</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -2238,7 +1932,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2310,20 +2004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5876" column="0" selection-start-line="5876" selection-start-column="0" selection-end-line="5876" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/alpha/com/scanit/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22442244">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2404,20 +2084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alpha/ZXing/android/IntentResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alpha/ZXing/android/IntentIntegrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-22/android.jar!/dalvik/system/BaseDexClassLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.76">
@@ -2450,14 +2116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5261" column="0" selection-start-line="5261" selection-start-column="0" selection-end-line="5261" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2497,11 +2155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_dialog_alert_holo_light.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2512,117 +2165,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/manual_entry.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/scan_entry.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/os/Handler.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/content/res/Resources.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31377#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#4519#4520#0" expanded="false" />
-            <element signature="e#4552#4553#0" expanded="false" />
-            <element signature="e#5003#5004#0" expanded="false" />
-            <element signature="e#5040#5041#0" expanded="false" />
-            <element signature="e#5218#5219#0" expanded="false" />
-            <element signature="e#5259#5260#0" expanded="false" />
-            <element signature="e#5605#5606#0" expanded="false" />
-            <element signature="e#5650#5651#0" expanded="false" />
-            <element signature="e#6442#6443#0" expanded="false" />
-            <element signature="e#6475#6476#0" expanded="false" />
-            <element signature="e#10258#10259#0" expanded="false" />
-            <element signature="e#10301#10302#0" expanded="false" />
-            <element signature="e#10614#10615#0" expanded="false" />
-            <element signature="e#10663#10664#0" expanded="false" />
-            <element signature="e#12859#12860#0" expanded="false" />
-            <element signature="e#12922#12923#0" expanded="false" />
-            <element signature="e#20193#20194#0" expanded="false" />
-            <element signature="e#20245#20246#0" expanded="false" />
-            <element signature="e#21088#21089#0" expanded="false" />
-            <element signature="e#21137#21138#0" expanded="false" />
-            <element signature="e#21494#21495#0" expanded="false" />
-            <element signature="e#21549#21550#0" expanded="false" />
-            <element signature="e#26650#26651#0" expanded="false" />
-            <element signature="e#26705#26706#0" expanded="false" />
-            <element signature="e#27541#27542#0" expanded="false" />
-            <element signature="e#27600#27601#0" expanded="false" />
-            <element signature="e#28061#28062#0" expanded="false" />
-            <element signature="e#28117#28118#0" expanded="false" />
-            <element signature="e#28298#28299#0" expanded="false" />
-            <element signature="e#28328#28329#0" expanded="false" />
-            <element signature="e#29660#29661#0" expanded="false" />
-            <element signature="e#29698#29699#0" expanded="false" />
-            <element signature="e#30036#30037#0" expanded="false" />
-            <element signature="e#30072#30073#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10755#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1911#1919#0" expanded="false" />
-            <element signature="e#2415#2416#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#5688#5689#0" expanded="false" />
-            <element signature="e#5729#5730#0" expanded="false" />
-            <element signature="e#6188#6189#0" expanded="false" />
-            <element signature="e#6222#6223#0" expanded="false" />
-            <element signature="e#6477#6478#0" expanded="false" />
-            <element signature="e#6517#6518#0" expanded="false" />
-            <element signature="e#6792#6793#0" expanded="false" />
-            <element signature="e#6848#6849#0" expanded="false" />
-            <element signature="e#7548#7549#0" expanded="false" />
-            <element signature="e#7582#7583#0" expanded="false" />
-            <element signature="e#8177#8178#0" expanded="false" />
-            <element signature="e#8210#8211#0" expanded="false" />
-            <element signature="e#9466#9467#0" expanded="false" />
-            <element signature="e#9542#9543#0" expanded="false" />
-            <element signature="e#9858#9859#0" expanded="false" />
-            <element signature="e#9905#9906#0" expanded="false" />
-            <element signature="e#10008#10009#0" expanded="false" />
-            <element signature="e#10038#10039#0" expanded="false" />
-            <element signature="e#10093#10094#0" expanded="false" />
-            <element signature="e#10122#10123#0" expanded="false" />
-            <element signature="e#10376#10377#0" expanded="false" />
-            <element signature="e#10416#10417#0" expanded="false" />
-          </folding>
+          <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2634,53 +2181,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/content/res/Resources.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_dialog_alert_holo_light.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.965517">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="e#404#424#0" expanded="true" />
+            <element signature="e#1487#1501#0" expanded="true" />
+            <element signature="e#1884#1899#0" expanded="true" />
+            <element signature="e#2543#2557#0" expanded="true" />
+            <element signature="e#3017#3036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#112901#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8292#8293#0" expanded="false" />
-            <element signature="e#8329#8330#0" expanded="false" />
-            <element signature="e#8823#8824#0" expanded="false" />
-            <element signature="e#8858#8859#0" expanded="false" />
-            <element signature="e#69945#69946#0" expanded="false" />
-            <element signature="e#69990#69991#0" expanded="false" />
-            <element signature="e#71781#71782#0" expanded="false" />
-            <element signature="e#71818#71819#0" expanded="false" />
-            <element signature="e#71868#71869#0" expanded="false" />
-            <element signature="e#71910#71911#0" expanded="false" />
-            <element signature="e#71949#71950#0" expanded="false" />
-            <element signature="e#71984#71985#0" expanded="false" />
-            <element signature="e#73412#73413#0" expanded="false" />
-            <element signature="e#73446#73447#0" expanded="false" />
-            <element signature="e#84214#84215#0" expanded="false" />
-            <element signature="e#84251#84252#0" expanded="false" />
-            <element signature="e#84511#84512#0" expanded="false" />
-            <element signature="e#84552#84553#0" expanded="false" />
-            <element signature="e#86394#86395#0" expanded="false" />
-            <element signature="e#86436#86437#0" expanded="false" />
-            <element signature="e#93640#93641#0" expanded="false" />
-            <element signature="e#93670#93671#0" expanded="false" />
-            <element signature="e#95364#95365#0" expanded="false" />
-            <element signature="e#95409#95410#0" expanded="false" />
-          </folding>
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/SQLite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/Barcodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2695,36 +2229,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.148148">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/manual_entry.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.965517">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#417#435#0" expanded="true" />
+            <element signature="e#686#707#0" expanded="true" />
+            <element signature="e#903#924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/scan_entry.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.793103">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/Barcodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1724138">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alpha/ZXing/android/IntentResult.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alpha/ZXing/android/IntentIntegrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-22/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/alpha/com/scanit/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.902439">
-          <caret line="429" column="37" selection-start-line="429" selection-start-column="37" selection-end-line="429" selection-end-column="37" />
+        <state vertical-scroll-proportion="-1.199005">
+          <caret line="233" column="33" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#clrBtnData#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatEmail#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#Filter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringG#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringE#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringManualE#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringUPS#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringManualUPS#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringX#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#FormatStringManualX#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#emailResults#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#19598#20242#0" expanded="true" />
-            <element signature="e#20241#20242#0" expanded="true" />
-            <element signature="e#20292#20717#0" expanded="true" />
-            <element signature="e#20716#20717#0" expanded="true" />
+            <element signature="method#ScanDataEmpty#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3566#5301#0" expanded="true" />
+            <element signature="e#5300#5301#0" expanded="true" />
+            <element signature="e#5347#5590#0" expanded="true" />
+            <element signature="e#5589#5590#0" expanded="true" />
+            <element signature="method#FedEXG#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#ManualFedEXG#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#FedEXGO#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#FedEXE#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#ManualFedEXE#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#UPS#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#ManualUPS#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#CreateListView#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadPreferences#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#LoadData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#saveLog#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ScanButton#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ManButton#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#17976#17977#0" expanded="true" />
+            <element signature="e#18013#18014#0" expanded="true" />
+            <element signature="class#ClearButton#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="" />
   </component>
 </project>

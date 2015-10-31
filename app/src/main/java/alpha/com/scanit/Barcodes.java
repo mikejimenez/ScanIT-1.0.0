@@ -1,12 +1,11 @@
 package alpha.com.scanit;
 
-public class Barcodes {
+class Barcodes {
 
     //private variables
-    int _id;
-    String _Barcode;
-    String _Company;
-
+    private int _id;
+    private String _Barcode;
+    private String _Company;
 
     public Barcodes() {
 
@@ -21,11 +20,6 @@ public class Barcodes {
     public Barcodes(String Barcode, String _Company) {
         this._Barcode = Barcode;
         this._Company = _Company;
-    }
-
-     // getting ID
-    public int getID() {
-        return this._id;
     }
 
     // setting id

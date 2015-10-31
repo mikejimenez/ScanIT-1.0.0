@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Scan It</string>
-    <string name="scan">Scan</string>
+    <string name="ScanButton">Scan</string>
     <string name="send">Send</string>
     <string name="action_settings">Settings</string>
-    <string name="paused">N</string>
+    <string name="tracking">Tracking # - No Spaces</string>
+    <string name="information">Information</string>
+    <string name="count">Count: </string>
+    <string name="sign">By: Michael Jimenez</string>
+    <string name="ManButton">Manual</string>
     <string name="hint_manual">
         \n
     Fedex Ground: XXXXXXX XXXXXXX XXXXXXX\n

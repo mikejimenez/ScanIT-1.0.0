@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tracking # - No Spaces"
+        android:text="@string/tracking"
         android:id="@+id/numText" />
 
     <EditText
@@ -15,14 +15,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/InfoTrack"
         style="@android:style/TextAppearance.Small"
-        android:editable="true"
         android:hint="@string/hint_manual" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Information"
+        android:text="@string/information"
         android:id="@+id/infoText" />
 
     <EditText

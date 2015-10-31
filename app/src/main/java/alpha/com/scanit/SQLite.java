@@ -2,6 +2,8 @@ package alpha.com.scanit;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -9,9 +11,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-public class SQLite extends SQLiteOpenHelper {
+class SQLite extends SQLiteOpenHelper {
 
-    // All Static variables
+
+    @SuppressLint("SpellCheckingInspection")
 
     // Database Variables
     private static final int DATABASE_VERSION = 1;
@@ -43,14 +46,6 @@ public class SQLite extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void onDrop() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        // Create tables again
-        onCreate(db);
-    }
-
     /**
      * Create, Read, Update, Delete Operations
      */
@@ -69,46 +64,30 @@ public class SQLite extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
-    // Getting single barcode
-    Barcodes getBarcodes(int id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor = db.query(TABLE_NAME, new String[]{KEY_ID,
-                        KEY_NAME, KEY_Barcode}, KEY_ID + "=?",
-                new String[]{String.valueOf(id)}, null, null, null, null
-        );
-        if (cursor != null)
-            cursor.moveToFirst();
-
-        Barcodes Barcodes = new Barcodes(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2));
-
-        return Barcodes;
-    }
-
     // Getting All Barcodes
-public List<Barcodes> getBarCodes() {
+    public List<Barcodes> getBarCodes() {
 
-    List<Barcodes> BarcodesList = new ArrayList<>();
-    // Select All Query
-    String selectQuery = "SELECT  * FROM " + TABLE_NAME;
-    SQLiteDatabase db = this.getWritableDatabase();
-    Cursor cursor = db.rawQuery(selectQuery, null);
+        List<Barcodes> BarcodesList = new ArrayList<>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_NAME;
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
 
-    // looping through all rows and adding to list
-    if (cursor.moveToFirst()) {
-        do {
-            Barcodes Barcodes = new Barcodes();
-            Barcodes.setID(Integer.parseInt(cursor.getString(0)));
-            Barcodes.setBarcode(cursor.getString(1));
-            Barcodes.setCompany(cursor.getString(2));
-            // Adding Barcode to list
-            BarcodesList.add(Barcodes);
-        } while (cursor.moveToNext());
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Barcodes Barcodes = new Barcodes();
+                Barcodes.setID(Integer.parseInt(cursor.getString(0)));
+                Barcodes.setBarcode(cursor.getString(1));
+                Barcodes.setCompany(cursor.getString(2));
+                // Adding Barcode to list
+                BarcodesList.add(Barcodes);
+            } while (cursor.moveToNext());
+        }
+
+
+        return BarcodesList;
     }
-
-
-    return BarcodesList;
-}
 
     // Deleting single Barcodes
     public void deleteBarcodes() {
